@@ -3,6 +3,10 @@
 	padding: $grid-gutter-width 0;
 }
 
+#wrapper-navbar{
+	box-shadow: 0px 2px 15px rgba($dark, 0.05);
+}
+
 // Reset hero wrapper padding to 0
 #wrapper-hero {
 	padding: 0px !important;
@@ -85,10 +89,6 @@ a.skip-link {
 	right: 0px;
 }
 
-// Reset Jumbotron default margin
-.jumbotron {
-	margin-bottom: 0px;
-}
 
 // Dropdown translation
 .navbar-dark .navbar-nav .dropdown-menu .nav-link {

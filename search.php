@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages
  *
- * @package wpcorp
+ * @package UnderStrap
  */
 
 // Exit if accessed directly.
@@ -10,13 +10,13 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-
+$container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
 <div class="wrapper" id="search-wrapper">
 
-	<div class="container" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
@@ -33,7 +33,7 @@ get_header();
 								<?php
 								printf(
 									/* translators: %s: query term */
-									esc_html__( 'Search Results for: %s', 'wpcorp' ),
+									esc_html__( 'Search Results for: %s', 'understrap' ),
 									'<span>' . get_search_query() . '</span>'
 								);
 								?>
@@ -51,20 +51,20 @@ get_header();
 						 * If you want to overload this in a child theme then include a file
 						 * called content-search.php and that will be used instead.
 						 */
-						get_template_part( 'template-parts/content', 'search' );
+						get_template_part( 'loop-templates/content', 'search' );
 					endwhile;
 					?>
 
 				<?php else : ?>
 
-					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
 				<?php endif; ?>
 
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php wpcorp_pagination(); ?>
+			<?php understrap_pagination(); ?>
 
 			<!-- Do the right sidebar check -->
 			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>

@@ -10,14 +10,14 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-
+$container = get_theme_mod( 'wpcorp_container_type' );
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">
 
-	<div class="container">
+	<div class="<?php echo esc_attr( $container ); ?>">
 
 		<div class="row">
 
@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 
 					<div class="site-info">
 
-						<?php echo "Footer Deatils" ?>
+						<?php wpcorp_site_info(); ?>
 
 					</div><!-- .site-info -->
 

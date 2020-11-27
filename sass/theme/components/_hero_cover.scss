@@ -1,0 +1,10 @@
+.hero-cover {
+  position: relative;
+  background-color: $primary;
+  background: url(/wp-content/themes/wpcorp/assets/images/header_image.png) no-repeat center center;
+  background-size: cover;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+  background-position-y: bottom;
+  text-align: center;
+}

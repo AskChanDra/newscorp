@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-
+$container = get_theme_mod( 'wpcorp_container_type' );
 ?>
 
 <?php if ( is_front_page() && is_home() ) : ?>
@@ -25,7 +25,7 @@ get_header();
 
 <div class="wrapper" id="index-wrapper">
 
-	<div class="container" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
