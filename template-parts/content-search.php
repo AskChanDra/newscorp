@@ -2,7 +2,7 @@
 /**
  * Search results partial template
  *
- * @package UnderStrap
+ * @package wpcorp
  */
 
 // Exit if accessed directly.
@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
 
 			<div class="entry-meta">
 
-				<?php understrap_posted_on(); ?>
+				<?php wpcorp_posted_on(); ?>
 
 			</div><!-- .entry-meta -->
 
@@ -40,7 +40,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<footer class="entry-footer">
 
-		<?php understrap_entry_footer(); ?>
+		<?php wpcorp_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

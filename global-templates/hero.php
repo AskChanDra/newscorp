@@ -2,7 +2,7 @@
 /**
  * Hero setup
  *
- * @package UnderStrap
+ * @package wpcorp
  */
 
 // Exit if accessed directly.

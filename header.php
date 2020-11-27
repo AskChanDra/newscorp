@@ -4,13 +4,13 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package UnderStrap
+ * @package wpcorp
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'wpcorp_container_type' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -21,19 +21,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
+<body <?php body_class(); ?> <?php wpcorp_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'wpcorp' ); ?></a>
 
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
 
 			<h2 id="main-nav-label" class="sr-only">
-				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
+				<?php esc_html_e( 'Main Navigation', 'wpcorp' ); ?>
 			</h2>
 
 		<?php if ( 'container' === $container ) : ?>
@@ -60,7 +60,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					?>
 					<!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'wpcorp' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
@@ -75,7 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						'walker'          => new wpcorp_WP_Bootstrap_Navwalker(),
 					)
 				);
 				?>

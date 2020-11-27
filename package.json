@@ -1,5 +1,5 @@
 {
-  "name": "understrap",
+  "name": "wpcorp",
   "version": "0.9.4",
   "description": "WordPress Theme framework",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/understrap/understrap.git"
+    "url": "https://github.com/wpcorp/wpcorp.git"
   },
   "keywords": [
     "wordpress",
@@ -23,12 +23,12 @@
     "bootstrap",
     "underscores"
   ],
-  "author": "The UnderStrap Authors (https://github.com/understrap/understrap/graphs/contributors)",
+  "author": "The wpcorp Authors (https://github.com/wpcorp/wpcorp/graphs/contributors)",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/understrap/understrap/issues"
+    "url": "https://github.com/wpcorp/wpcorp/issues"
   },
-  "homepage": "https://understrap.com",
+  "homepage": "https://wpcorp.com",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.11.6",

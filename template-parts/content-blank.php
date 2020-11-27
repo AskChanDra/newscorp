@@ -2,7 +2,7 @@
 /**
  * Blank content partial template
  *
- * @package UnderStrap
+ * @package wpcorp
  */
 
 // Exit if accessed directly.

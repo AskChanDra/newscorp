@@ -2,7 +2,7 @@
 /**
  * Post rendering content according to caller of get_template_part
  *
- * @package UnderStrap
+ * @package wpcorp
  */
 
 // Exit if accessed directly.
@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php if ( 'post' === get_post_type() ) : ?>
 
 			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
+				<?php wpcorp_posted_on(); ?>
 			</div><!-- .entry-meta -->
 
 		<?php endif; ?>
@@ -39,7 +39,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'wpcorp' ),
 				'after'  => '</div>',
 			)
 		);
@@ -49,7 +49,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<footer class="entry-footer">
 
-		<?php understrap_entry_footer(); ?>
+		<?php wpcorp_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 
