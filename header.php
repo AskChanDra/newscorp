@@ -30,7 +30,7 @@ $container = get_theme_mod( 'wpcorp_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'wpcorp' ); ?></a>
 
-		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
+		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-transparent" aria-labelledby="main-nav-label">
 
 			<h2 id="main-nav-label" class="sr-only">
 				<?php esc_html_e( 'Main Navigation', 'wpcorp' ); ?>
@@ -54,8 +54,8 @@ $container = get_theme_mod( 'wpcorp_container_type' );
 						'menu_class'      => 'navbar-nav mr-auto',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
-						'depth'           => 2,
-						'walker'          => new wpcorp_WP_Bootstrap_Navwalker(),
+						'depth'           => 1,
+						'walker'          => new WPCorp_WP_Bootstrap_Navwalker(),
 					)
 				);
 				?>

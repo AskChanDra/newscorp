@@ -1,0 +1,46 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  // prevents ::before borders from looking offset if not enough cells 
+  grid-gap: 1px;
+  // remove the edge borders
+  overflow: hidden;
+}
+
+.grid-cell {
+  position: relative;
+  
+  // create the illusion of a border
+  &::before {
+    content: '';
+    position: absolute;
+    // match the grid gap for border thickness
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    // this becomes the border, and handles overlap
+    background-color: #ddd;
+  }
+}
+
+
+.cell-content {
+ position: relative;
+ // fill in the cell color
+ background-color: #fff;
+ padding: 2rem;
+ img{
+     max-width: 190px;
+ }
+}
+
+
+.grid-widget {
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 0 auto;
+}

@@ -23,13 +23,13 @@ defined( 'ABSPATH' ) || exit;
  */
 
 /* Check if Class Exists. */
-if ( ! class_exists( 'wpcorp_WP_Bootstrap_Navwalker' ) ) {
+if ( ! class_exists( 'WPCorp_WP_Bootstrap_Navwalker' ) ) {
 	/**
 	 * WP_Bootstrap_Navwalker class.
 	 *
 	 * @extends Walker_Nav_Menu
 	 */
-	class wpcorp_WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
+	class WPCorp_WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 
 		/**
 		 * Starts the list before the elements are added.

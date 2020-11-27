@@ -15,6 +15,7 @@ $container = get_theme_mod( 'wpcorp_container_type' );
 
 if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
+	get_template_part('global-templates/logo-grid' );
 }
 ?>
 
@@ -27,6 +28,8 @@ if ( is_front_page() ) {
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
+
+				 
 
 					<?php
 					while ( have_posts() ) {
