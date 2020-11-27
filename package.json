@@ -4,7 +4,10 @@
   "description": "WordPress Theme framework",
   "main": "index.js",
   "scripts": {
-    "postinstall": "gulp copy-assets"
+    "postinstall": "gulp copy-assets",
+    "start": "gulp",
+    "dev": "gulp watch-bs",
+    "build": "gulp build"
   },
   "engines": {
     "node": ">=10"

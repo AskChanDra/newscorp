@@ -295,7 +295,7 @@
               - Added cookies checkbox support for inc/custom-comments.php - Thx @Jean Pierre Kolb
               - Create Japanese translation - Thx @teruteru128
               - WooCommerce 3.4.0 update - Thx @ZacharyElkins
-              - Organize sidebar files into loop-templates directory - Thx @axlright
+              - Organize sidebar files into template-parts directory - Thx @axlright
               - Update package.json
               - POT file and Russian translation update - Thx @edkozuto
 

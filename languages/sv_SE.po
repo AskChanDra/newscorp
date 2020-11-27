@@ -42,7 +42,7 @@ msgstr ""
 "X-Poedit-SearchPath-17: hero.php\n"
 "X-Poedit-SearchPath-18: page.php\n"
 "X-Poedit-SearchPath-19: functions.php\n"
-"X-Poedit-SearchPath-20: page-templates\n"
+"X-Poedit-SearchPath-20: templates\n"
 "X-Poedit-SearchPath-21: inc\n"
 "X-Loco-Parser: loco_parse_po"
 
@@ -252,35 +252,35 @@ msgctxt "noun"
 msgid "Comment"
 msgstr "Kommentarer"
 
-#: ../loop-templates/content-single.php:29 ../loop-templates/content.php:33 ..
-#: loop-templates/content-page.php:25
+#: ../template-parts/content-single.php:29 ../template-parts/content.php:33 ..
+#: template-parts/content-page.php:25
 msgid "Pages:"
 msgstr "Sidor:"
 
-#: ../loop-templates/content-none.php:16
+#: ../template-parts/content-none.php:16
 msgid "Nothing Found"
 msgstr "Inget hittades"
 
-#: ../loop-templates/content-none.php:24
+#: ../template-parts/content-none.php:24
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Redo att skriv ditt första inlägg? <a href=\"%1$s\">Börja här</a>."
 
-#: ../loop-templates/content-none.php:28
+#: ../template-parts/content-none.php:28
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 "Tyvärr fick din sökning inga träffar. Du kan prova igen med nya nyckelord."
 
-#: ../loop-templates/content-none.php:33
+#: ../template-parts/content-none.php:33
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr "Vi verkar inte hitta det du söker, Det kanske hjälper att söka."
 
-#: ../loop-templates/content-page.php:34
+#: ../template-parts/content-page.php:34
 msgid "Edit"
 msgstr "Ändra"
 

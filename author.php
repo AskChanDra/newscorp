@@ -82,7 +82,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						}
 						echo '</ul>';
 					} else {
-						get_template_part( 'loop-templates/content', 'none' );
+						get_template_part( 'template-parts/content', 'none' );
 					}
 					?>
 					<!-- End Loop -->

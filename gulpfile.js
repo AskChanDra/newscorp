@@ -332,6 +332,11 @@ gulp.task(
 // Compiles the styles and scripts and runs the dist task
 gulp.task( 'compile', gulp.series( 'styles', 'scripts', 'dist' ) );
 
+// Run
+// gulp build
+// Compiles the styles and scripts and runs the dist task
+gulp.task( 'build', gulp.series( 'styles', 'scripts' ) );
+
 // Run:
 // gulp
 // Starts watcher (default task)
