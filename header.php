@@ -10,7 +10,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'wpcorp_container_type' );
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -36,9 +36,7 @@ $container = get_theme_mod( 'wpcorp_container_type' );
 				<?php esc_html_e( 'Main Navigation', 'wpcorp' ); ?>
 			</h2>
 
-		<?php if ( 'container' === $container ) : ?>
 			<div class="container">
-		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
@@ -79,9 +77,7 @@ $container = get_theme_mod( 'wpcorp_container_type' );
 					)
 				);
 				?>
-			<?php if ( 'container' === $container ) : ?>
 			</div><!-- .container -->
-			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
 

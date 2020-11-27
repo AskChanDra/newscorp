@@ -8,7 +8,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'wpcorp_container_type' );
+
 
 ?>
 
@@ -18,7 +18,7 @@ $container = get_theme_mod( 'wpcorp_container_type' );
 
 	<div class="wrapper" id="wrapper-footer-full">
 
-		<div class="<?php echo esc_attr( $container ); ?>" id="footer-full-content" tabindex="-1">
+		<div class="container" id="footer-full-content" tabindex="-1">
 
 			<div class="row">
 

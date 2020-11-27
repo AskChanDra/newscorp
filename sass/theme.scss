@@ -1,6 +1,6 @@
 @import "theme/theme_variables";  // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or wpcorp variables here
 @import "assets/bootstrap4";      // <-------- Loads Bootstrap4
-@import "wpcorp/wpcorp";  // <-------- Loads the wpcorp defaults. Just a few classes to incorporate BS in WP
+// @import "wpcorp/wpcorp";  // <-------- Loads the wpcorp defaults. Just a few classes to incorporate BS in WP
 
 // Optional files - If you dont use the corresponding scripts/fonts comment em out
 @import "assets/font-awesome";    // <-------- Font Awesome Icon font
