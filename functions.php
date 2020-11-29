@@ -5,56 +5,6 @@
  * @package WPCorp
  */
 
-
-if ( ! defined( 'WPCORP_DIR_PATH' ) ) {
-	define( 'WPCORP_DIR_PATH', untrailingslashit( get_template_directory() ) );
-}
-
-if ( ! defined( 'WPCORP_DIR_URI' ) ) {
-	define( 'WPCORP_DIR_URI', untrailingslashit( get_template_directory_uri() ) );
-}
-
-if ( ! defined( 'WPCORP_BUILD_URI' ) ) {
-	define( 'WPCORP_BUILD_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build' );
-}
-
-if ( ! defined( 'WPCORP_BUILD_PATH' ) ) {
-	define( 'WPCORP_BUILD_PATH', untrailingslashit( get_template_directory() ) . '/assets/build' );
-}
-
-if ( ! defined( 'WPCORP_BUILD_JS_URI' ) ) {
-	define( 'WPCORP_BUILD_JS_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/js' );
-}
-
-if ( ! defined( 'WPCORP_BUILD_JS_DIR_PATH' ) ) {
-	define( 'WPCORP_BUILD_JS_DIR_PATH', untrailingslashit( get_template_directory() ) . '/assets/build/js' );
-}
-
-if ( ! defined( 'WPCORP_BUILD_IMG_URI' ) ) {
-	define( 'WPCORP_BUILD_IMG_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/src/img' );
-}
-
-if ( ! defined( 'WPCORP_BUILD_CSS_URI' ) ) {
-	define( 'WPCORP_BUILD_CSS_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/css' );
-}
-
-if ( ! defined( 'WPCORP_BUILD_CSS_DIR_PATH' ) ) {
-	define( 'WPCORP_BUILD_CSS_DIR_PATH', untrailingslashit( get_template_directory() ) . '/assets/build/css' );
-}
-
-if ( ! defined( 'WPCORP_BUILD_LIB_URI' ) ) {
-	define( 'WPCORP_BUILD_LIB_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/library' );
-}
-
-require_once WPCORP_DIR_PATH . '/inc/helpers/autoloader.php';
-require_once WPCORP_DIR_PATH . '/inc/helpers/template-tags.php';
-
-function wpcorp_get_theme_instance() {
-	\WPCORP\Inc\WPCORP::get_instance();
-}
-
-wpcorp_get_theme_instance();
-
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
