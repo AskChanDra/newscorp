@@ -44,6 +44,8 @@
  img{
      width: 100%;
      cursor: pointer;
+    object-fit: contain;
+    height: 60px !important;
  }
 }
 
